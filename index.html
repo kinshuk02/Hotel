@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MY HOTEL</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-96x96.png">
+
+<!-- fonts -->
+
+
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+
+  <!--Favicon-->
+  <link rel="icon" type="iamge/png" href="" >
+
+  <!--swiper-->
+  <link    rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!--fontawesome-->
+  <script src="https://kit.fontawesome.com/4f18657ca8.js" crossorigin="anonymous"></script>
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <body>
+
+
+<!--Navbar-->
+<header  class="header_wrapper">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+  <img src="images/logo.png"  class="img-fluid" alt="logo" >
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="far fa-stream navbar-toggler-icon"></i>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </li>
+      <li class="nav-item mt-3 mt-lg-0">
+        <a class="main-btn" href="#">Book Now </a>
+      </li>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</header>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+
+
+
+
+    </ul>
+
+</div>
+
+</nav>
+
+<!-- header image -->
+
+
+  <!-- <div >
+    <img id="himage" src="images/HOTEL.jpg " alt="header" >
+  </div>
+
+
+ -->
+
+  
+  <section class="home" name="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>Hello.Salut.Hola</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <button>MORE INFO</button>
+        </div>
+      </div>
+      <div class="image" >
+        <img src="images/dining.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="images/dining.jpg" alt="" class="slide active" onclick="img('images/dining.jpg')">
+        <img src="images/dining1.jpg" alt="" class="slide" onclick="img('images/dining1.jpg')">
+        <img src="images/lobby.jpg" alt="" class="slide" onclick="img('images/lobby.jpg')">
+        <!-- <img src="image/home4.jpg" alt="" class="slide" onclick="img('image/home4.jpg')"> -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>Check-in:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>Check-out:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>Adults:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>Children:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section  class="room top " id="pricing">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+          <h2>Rooms $ Suites</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW ALL</button>
+        </div>
+      </div>
+
+      <div class="content grid ">
+        <div class="box">
+          <div class="img">
+            <img src="images/room.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Superior Soble Rooms</h3>
+            <p> <span>$</span>129 <span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/room2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Superior Soble Rooms</h3>
+            <p> <span>$</span>129 <span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/room3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Superior Soble Rooms</h3>
+            <p> <span>$</span>129 <span>/per night</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+<section class="wrapper wrapper2 top">
+  <div class="container">
+    <div class="text">
+      <div class="heading">
+        <!-- <h5>AT THE HEART OF COMMUNICATION</h5> -->
+        <h2>People Say</h2>
+      </div>
+
+      <div class="para">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <div class="box flex">
+          <div class="img">
+            <img src="images/face.jpg" alt="">
+          </div>
+          <div class="name">
+            <h5>KATE PALMER</h5>
+            <h5>IDAHO</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section  class="gallary mtop " id="gallery">
+  <div class="container">
+    <div class="heading_top flex1">
+      <div class="heading">
+        <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+        <h2>Photo Gallery of Our Hotel</h2>
+      </div>
+      <div class="button">
+        <button class="btn1">VIEW GALLERY</button>
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="images/g1.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="images/g2.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="images/g3.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="images/g4.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="images/g5.jpg" alt="">
+      </div>
+      <!-- <div class="item">
+        <img src="image/g6.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="image/g7.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="image/g8.jpg" alt="">
+      </div> -->
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class = "footer">
+  <div class = "footer-container">
+      <div>
+          <h2>About Us </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+          <ul class = "social-icons">
+              <li class = "flex">
+                  <i class = "fa fa-twitter fa-2x"></i>
+              </li>
+              <li class = "flex">
+                  <i class = "fa fa-facebook fa-2x"></i>
+              </li>
+              <li class = "flex">
+                  <i class = "fa fa-instagram fa-2x"></i>
+              </li>
+          </ul>
+      </div>
+
+      <div>
+          <h2>Useful Links</h2>
+          <a href = "#">Blog</a>
+          <a href = "#">Rooms</a>
+          <a href = "#">Subscription</a>
+          <a href = "#">Gift Card</a>
+      </div>
+
+      <div>
+          <h2>Privacy</h2>
+          <a href = "#">Career</a>
+          <a href = "#">About Us</a>
+          <a href = "#">Contact Us</a>
+          <a href = "#">Services</a>
+      </div>
+
+      <div>
+          <h2>Have A Question</h2>
+          <div class = "contact-item">
+              <span>
+                  <i class = "fas fa-map-marker-alt"></i>
+              </span>
+              <span>
+                  203 Fake St.Mountain View, San Francisco, California, USA
+              </span>
+          </div>
+          <div class = "contact-item">
+              <span>
+                  <i class = "fas fa-phone-alt"></i>
+              </span>
+              <span>
+                  +84545 37534 48
+              </span>
+          </div>
+          <div class = "contact-item">
+              <span>
+                  <i class = "fas fa-envelope"></i>
+              </span>
+              <span>
+                  info@domain.com
+              </span>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- end of footer -->
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+referrerpolicy="no-referrer"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    1000: {
+      items: 4
+    }
+  }
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- banner -->
+<section class="swiper mySwiper">
+
+</section>
+
+
+
+
+  </section>
+
+
+
+<!--javascript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
