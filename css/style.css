@@ -171,6 +171,13 @@ header ul li a:hover {
     font-weight: bold;
     color: white;
   }
+ .secondary-btn {
+    padding: 15px 40px;
+    background: none;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+  }
   
   
   .home .image_item img {
